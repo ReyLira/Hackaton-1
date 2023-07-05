@@ -1,0 +1,17 @@
+docker push reylirg/backend:v1
+docker run --name backend -p 8000:8080 reylirg/backend:v1
+docker build -t reylirg/backend:v1 .
+
+pasos para implementar docker:
+
+- docker file 
+- construir .jar 
+- docker build -t reto3 .
+- docker run --name test -p 8000:8000 reto1
+- docker stop 
+- docker rm 
+- docker rmi
+- docker ps -a
+
+
+
