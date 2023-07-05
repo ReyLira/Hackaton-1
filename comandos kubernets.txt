@@ -12,6 +12,22 @@ pasos para implementar docker:
 - docker rm 
 - docker rmi
 - docker ps -a
+para ejecutar el blugreen: 
+
+- para cambiar de version solo cambia el michi donde esta ubicado
+kubectl apply -f blue-green-service.yml
+kubectl apply -f blue-deployment.yml
+kubectl apply -f green-deployment.yml
+
+En la captura uno tienes que correr el siguiente comando: 
+- kubectl get pods 
+- hacer un registro en postman estando en blue 
+- tomar el nombre del pods y ejecutar : kubectl get log -nombre del pod-
+
+En la captura uno tienes que correr el siguiente comando: 
+- kubectl get pods 
+- hacer un registro en postman estando en green, añadir el campo active 
+- tomar el nombre del pods y ejecutar : kubectl get log -nombre del pod-
 
 
 
