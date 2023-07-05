@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: green-deployment
+  labels:
+    app: blue-green-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: green
+  template:
+    metadata:
+      labels:
+        app: green
+    spec:
+      containers:
+      - name: green-container
+        image: 
+        resources:
+          limits:
+            cpu: "800m"
+            memory: "900Mi"
+          requests:
+            cpu: "200m"
+            memory: "100Mi"
+        ports:
+        - containerPort: 8080      
