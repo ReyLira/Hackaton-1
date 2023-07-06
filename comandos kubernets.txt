@@ -30,4 +30,8 @@ En la captura uno tienes que correr el siguiente comando:
 - tomar el nombre del pods y ejecutar : kubectl get log -nombre del pod-
 
 
+comando postman: 
+http://localhost:8081/ms-soa
+
+
 
