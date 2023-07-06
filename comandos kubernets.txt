@@ -1,6 +1,7 @@
 docker push reylirg/backend:v1
 docker run --name backend -p 8000:8080 reylirg/backend:v1
-docker build -t reylirg/backend:v1 .
+docker build -t reylirg/backend:2.0.0  .
+
 
 pasos para implementar docker:
 
